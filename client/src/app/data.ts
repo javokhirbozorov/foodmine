@@ -1,4 +1,6 @@
 import { Food } from "./shared/models/Food";
+import { Tag } from "./shared/models/Tag";
+
 
 export const sample_food: Food[]=[
     {
@@ -67,4 +69,15 @@ export const sample_food: Food[]=[
         imgUrl: 'https://raw.githubusercontent.com/nasirjd/foodmine-course/007095da4fef5c43d1f2f309c4a85b42677405ad/frontend/src/assets/food-6.jpg',
         tags: ['FastFood', 'Pizza', 'Lunch'],
       },
+]
+
+export const sample_tags: Tag[]=[
+  {name:'All', count:6},
+  {name:'FastFood', count:4},
+  {name:'Pizza', count:4},
+  {name:'Lunch', count:6},
+  {name:'SlowFood', count:3},
+  {name:'Hamburger', count:2},
+  {name:'Fry', count:1},
+  {name:'Soup', count:1},
 ]

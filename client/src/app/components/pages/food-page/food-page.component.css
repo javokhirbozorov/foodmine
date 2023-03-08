@@ -1,0 +1,115 @@
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    margin:3rem;
+}
+
+.container >*{
+    min-width:25rem;
+    max-width:40rem
+}
+
+
+img{
+    border-radius:3rem;
+    flex:1 0;
+    boject-fit:cover;
+    height:35rem;
+    margin:1rem;
+    box-shadow:2px 2px 30px 5px #88888888
+}
+
+
+.content{
+    display: flex;
+    width:100%;
+    flex-direction:column;
+    /* flex:1 0; */
+    padding:2rem;
+    margin-left:1rem;
+    color:black;
+    
+}
+
+.food-name{
+    font-size:3rem;
+    display:flex;
+    justify-content:space-between;
+    margin:0;
+}
+
+.food-name span{
+    color:red;
+}
+
+.origins{
+    display:flex;
+    justify-content:space-between;
+    color:grey;
+    margin:1rem 0;
+}
+
+
+    .tags {
+        display:flex;
+        justify-content:flex-start;
+
+        list-style-type:none;
+
+        
+    }
+    
+    .tags a{
+        cursor:pointer;
+        padding:1rem;
+        transition-duration:400ms;
+
+    }
+    
+    .tags a:hover{
+        background:#ffd6d6;
+    
+        border-radius:10px;
+    }
+    
+
+
+    .cook-time {
+        color:grey;
+          margin:1rem 0;
+    }
+
+    .cook-time span{
+        color:black;
+      
+    }
+
+
+
+    .price{
+        color:grey;
+        font-size:1.5rem;
+    }
+    .price span{
+        color:green;
+    }
+
+
+
+.add-to-cart-btn{
+    background: red;
+    color:white;
+    padding:1rem;
+    border-radius:2rem;
+    border:none;
+    margin: 1.5rem 0;
+    transition-duration:200ms
+}
+
+.add-to-cart-btn:hover{
+    cursor:pointer;
+    transform:scale(1.02);
+    box-shadow:2px 2px 20px 2px #888888
+}

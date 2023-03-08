@@ -1,0 +1,19 @@
+.tags ul{
+    display:flex;
+    justify-content:space-evenly;
+    list-style-type:none;
+    margin:3rem;
+    
+}
+
+li{
+    cursor:pointer;
+    padding:1rem;
+    transition-duration:400ms;
+}
+
+li:hover{
+    background:#ffd6d6;
+
+    border-radius:10px;
+}
