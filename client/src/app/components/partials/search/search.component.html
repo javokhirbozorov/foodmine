@@ -1,0 +1,4 @@
+<div class="search">
+    <input #searchInput placeholder="Search Food" (keyup.enter)="search(searchInput.value)" type="text" [value]="searchTerm">
+    <button (click)="search(searchInput.value)" class="search-btn">🔍</button>
+</div>
