@@ -1,5 +1,5 @@
-<app-not-found [visible]="!food.id" notFoundMessage="Food Not Found" resetLinkText="Back To Home Page"></app-not-found>
-<div *ngIf="food.id" class="container">
+<app-not-found [visible]="!food" notFoundMessage="Food Not Found" resetLinkText="Back To Home Page"></app-not-found>
+<div *ngIf="food" class="container">
     <img [src]="food.imgUrl" [alt]="food.name">
     <div class="content">
         <h3 class="food-name">{{food.name}} <span class="favorite {{food.favorite? '':'not' }}">{{food.favorite? '♥︎':'' }}</span></h3>

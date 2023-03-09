@@ -14,7 +14,9 @@ export class FoodPageComponent implements OnInit {
   constructor(activatedRoute:ActivatedRoute, foodService:FoodService, private cartService:CartService, private router: Router) { 
     activatedRoute.params.subscribe(params=>{
       if(params.foodId)
-      this.food = foodService.getFoodById(params.foodId)
+        foodService.getFoodById(params.foodId).subscribe(foodData =>{
+          this.food = foodData
+        })
 
      
     })
